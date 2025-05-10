@@ -3,99 +3,86 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sushant Thapa | IT Professional</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Sushant Thapa – Resume</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+  <div class="resume-container">
+    <img src="assets/profile.jpg" alt="Sushant Thapa" class="profile-pic" />
     <h1>Sushant Thapa</h1>
-    <p>IT Support Technician | Wright, ACT, Australia</p>
-    <div class="contact">
-      <a href="tel:+61414878426">Call</a> • 
-      <a href="mailto:sushantthapa285@gmail.com">Email</a> • 
-      <a href="https://www.linkedin.com/in/sushant-t-8a956b132/" target="_blank">LinkedIn</a>
-    </div>
-  </header>
+    <p class="subtitle">IT Systems Administrator | Support | Networking | Project Delivery</p>
 
-  <section>
-    <h2>Summary</h2>
-    <p>
-      IT Support Technician with 2+ years’ experience in technical support and project delivery. ITIL v4 Foundation certified and awarded 'Team Ambassadors' for excellence. Skilled in streamlining operations, managing installations, and enforcing access controls.
-    </p>
-  </section>
-
-  <section>
-    <h2>Experience</h2>
-
-    <div class="job">
-      <h3>IT Services Officer – Hardware & General</h3>
-      <span>Jul 2023 – Mar 2025</span>
-      <ul>
-        <li>Provided L1/L2 support to 400+ users across 7 locations using Freshservice.</li>
-        <li>Managed Entra ID, Microsoft 365, user access, and security policies.</li>
-        <li>Supported ERP & POS deployment: 60+ desktops, printers, POS terminals.</li>
-        <li>Resolved critical network, software, and hardware issues onsite/remotely.</li>
-      </ul>
+    <div class="button-row">
+      <button class="info-btn" data-target="summary">Summary</button>
+      <button class="info-btn" data-target="experience">Experience</button>
+      <button class="info-btn" data-target="skills">Skills</button>
+      <button class="info-btn" data-target="certs">Certifications</button>
+      <button class="info-btn" data-target="connect">Connect</button>
     </div>
 
-    <div class="job">
-      <h3>IT Intern – Hardware & General</h3>
-      <span>Mar 2023 – Jul 2023</span>
-      <ul>
-        <li>Configured user accounts, Active Directory, and reset credentials.</li>
-        <li>Monitored backups and supported system recovery tasks.</li>
-        <li>Triaged service desk tickets and helped with inventory traceability.</li>
-      </ul>
+    <div class="bubble-container">
+      <div id="summary" class="bubble">
+        <h2>Professional Summary</h2>
+        <p>IT Support Technician with over 2 years of hands-on experience supporting and improving system infrastructure and end-user efficiency. I recently earned my ITIL v4 Foundation certification and have been involved in multi-site ERP and phone system rollouts. Recognised with the 'Team Ambassadors' Award for outstanding contribution and collaborative project delivery.</p>
+      </div>
+
+      <div id="experience" class="bubble">
+        <h2>Professional Experience</h2>
+        <p><strong>IT Services Officer – Hardware & General</strong></p>
+        <ul>
+          <li>Led multi-site IT support for over 400 staff</li>
+          <li>Assisted ERP & POS rollout, handled Level 1–2 tickets, device deployment, and RingCentral migration</li>
+          <li>Managed Entra ID, IP allocations, and phone porting</li>
+          <li>Recognised for strong teamwork, internal support and technical execution</li>
+        </ul>
+        <p><strong>IT Intern – Hardware & General</strong></p>
+        <ul>
+          <li>Provided daily IT support, setup desktop environments, managed Freshservice tickets, and collaborated with vendors</li>
+        </ul>
+        <p><strong>Yard Associate – Hardware & General</strong></p>
+        <ul>
+          <li>Handled product logistics, customer loading, and stock coordination prior to IT promotion</li>
+        </ul>
+        <p><strong>Team Member – Coles</strong></p>
+        <ul>
+          <li>Handled operations, POS systems, and customer service while occasionally taking on team leadership responsibilities</li>
+        </ul>
+      </div>
+
+      <div id="skills" class="bubble">
+        <h2>Key Skills</h2>
+        <ul>
+          <li>IT Support & Troubleshooting</li>
+          <li>System Administration (Entra ID, Microsoft 365)</li>
+          <li>Ticketing Systems (Freshservice)</li>
+          <li>Networking (Cisco Meraki, UniFi, Sophos)</li>
+          <li>Project Support & Hardware Rollout</li>
+          <li>RingCentral, ERP Systems</li>
+          <li>ITIL v4 Foundation Certified</li>
+        </ul>
+      </div>
+
+      <div id="certs" class="bubble">
+        <h2>Certifications & Education</h2>
+        <ul>
+          <li>📜 ITIL® 4 Foundation – 2025</li>
+          <li>🎓 Bachelor of IT – Crown Institute of Higher Education, 2023</li>
+        </ul>
+        <h3>Languages</h3>
+        <ul>
+          <li>English (Fluent), Nepali (Native), Hindi (Fluent)</li>
+        </ul>
+      </div>
+
+      <div id="connect" class="bubble">
+        <h2>Connect With Me</h2>
+        <a href="mailto:sushantthapa285@gmail.com" class="connect-btn email">📧 Email</a>
+        <a href="tel:+61414878426" class="connect-btn call">📞 Call</a>
+        <a href="https://wa.me/61414878426" class="connect-btn whatsapp">💬 WhatsApp</a>
+        <a href="https://www.linkedin.com/in/sushant-t-8a956b132/" class="connect-btn linkedin">🔗 LinkedIn</a>
+      </div>
     </div>
-
-    <div class="job">
-      <h3>Team Member – Coles</h3>
-      <span>Mar 2020 – Mar 2025</span>
-      <ul><li>Delivered customer service and maintained store operations.</li></ul>
-    </div>
-
-    <div class="job">
-      <h3>Yard Associate – Hardware & General</h3>
-      <span>Mar 2022 – Mar 2023</span>
-      <ul><li>Managed stock coordination and supported customer loading.</li></ul>
-    </div>
-  </section>
-
-  <section>
-    <h2>Skills <button onclick="toggleSkills()">Show/Hide</button></h2>
-    <ul id="skills" class="skills">
-      <li>Windows Server</li>
-      <li>Microsoft 365</li>
-      <li>Entra ID (Azure AD)</li>
-      <li>Active Directory</li>
-      <li>Freshservice</li>
-      <li>Remote Desktop</li>
-      <li>Backup & Recovery</li>
-      <li>Network Troubleshooting</li>
-      <li>Endpoint Management</li>
-      <li>Service Desk</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Certifications</h2>
-    <p>ITIL® 4 Foundation, PeopleCert (Valid: 03/2025 – 03/2028)</p>
-  </section>
-
-  <section>
-    <h2>Education</h2>
-    <p>Bachelor of Information Technology, Crown Institute of Higher Education, North Sydney (GPA: 5.39)</p>
-  </section>
-
-  <section>
-    <h2>Languages</h2>
-    <p>English (Native), Nepali (Native), Hindi (Fluent)</p>
-  </section>
-
-  <footer>
-    <p>© 2025 Sushant Thapa</p>
-  </footer>
-
+  </div>
   <script src="script.js"></script>
 </body>
 </html>

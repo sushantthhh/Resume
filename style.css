@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #000;
+  color: #fff;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00aaff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin: 5px 0;
+  font-size: 1.8rem;
+}
+
+.subtitle {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #ccc;
+  text-align: center;
+  max-width: 600px;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.info-btn {
+  background: #00aaff;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.info-btn:hover {
+  background: #0077cc;
+}
+
+.bubble-container {
+  margin-top: 5px;
+  width: 90%;
+  max-width: 700px;
+  min-height: 200px;
+}
+
+.bubble {
+  display: none;
+  background: #fff;
+  color: #111;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  animation: fadeIn 0.3s ease;
+}
+
+.bubble.show {
+  display: block;
+}
+
+.connect-btn {
+  display: inline-block;
+  padding: 8px 14px;
+  margin: 6px 6px 0 0;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.email { background: #00aaff; }
+.call { background: #28a745; }
+.whatsapp { background: #25d366; }
+.linkedin { background: #0077b5; }
+
+ul {
+  padding-left: 20px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
