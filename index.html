@@ -5,19 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sushant Thapa – Resume</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
   <div class="resume-container">
     <img src="assets/profile.jpg" alt="Sushant Thapa" class="profile-pic" />
     <h1>Sushant Thapa</h1>
-    <p class="subtitle">IT Systems Administrator | Support | Networking | Project Delivery</p>
+    <p class="subtitle"><span id="typed-text"></span></p>
 
     <div class="button-row">
-      <button class="info-btn" data-target="summary">Summary</button>
-      <button class="info-btn" data-target="experience">Experience</button>
-      <button class="info-btn" data-target="skills">Skills</button>
-      <button class="info-btn" data-target="certs">Certifications</button>
-      <button class="info-btn" data-target="connect">Connect</button>
+      <button class="info-btn" data-target="summary">📄 Summary</button>
+      <button class="info-btn" data-target="experience">💼 Experience</button>
+      <button class="info-btn" data-target="skills">🧠 Skills</button>
+      <button class="info-btn" data-target="certs">🎓 Certifications</button>
+      <button class="info-btn" data-target="connect">🤝 Connect</button>
     </div>
 
     <div class="bubble-container">
@@ -29,37 +30,32 @@
       <div id="experience" class="bubble">
         <h2>Professional Experience</h2>
 
-<p><strong>IT Services Officer, Hardware & General Supplies Limited, Brookvale, Australia</strong><br>
-07/2023 – 03/2025</p>
-<ul>
-  <li>Provided technical support across locations for hardware, software, and networks</li>
-  <li>Supported deployment of systems, POS hardware, and printers during upgrades</li>
-  <li>Managed user access via Entra (Azure AD), IP allocation, and phone porting</li>
-  <li>Recognised for contributions to large-scale IT projects and team support</li>
-</ul>
+        <p><strong>IT Services Officer, Hardware & General Supplies Limited, Brookvale, Australia</strong><br>07/2023 – 03/2025</p>
+        <ul>
+          <li>Provided technical support across locations for hardware, software, and networks</li>
+          <li>Supported deployment of systems, POS hardware, and printers during upgrades</li>
+          <li>Managed user access via Entra (Azure AD), IP allocation, and phone porting</li>
+          <li>Recognised for contributions to large-scale IT projects and team support</li>
+        </ul>
 
-<p><strong>IT Support Technician Intern, Hardware & General Supplies Limited, Brookvale, Australia</strong><br>
-03/2023 – 07/2023</p>
-<ul>
-  <li>Assisted with troubleshooting, installations, and user support</li>
-  <li>Gained experience in system administration and networking basics</li>
-  <li>Helped improve IT waste handling through cost-effective practices</li>
-</ul>
+        <p><strong>IT Support Technician Intern, Hardware & General Supplies Limited, Brookvale, Australia</strong><br>03/2023 – 07/2023</p>
+        <ul>
+          <li>Assisted with troubleshooting, installations, and user support</li>
+          <li>Gained experience in system administration and networking basics</li>
+          <li>Helped improve IT waste handling through cost-effective practices</li>
+        </ul>
 
-<p><strong>Part Time – Team Member, Coles, Manly Vale & Dee Why, Australia</strong><br>
-03/2020 – 03/2025</p>
-<ul>
-  <li>Delivered friendly customer service and maintained store operations</li>
-  <li>Strengthened teamwork, multitasking, and communication in a fast-paced setting</li>
-</ul>
+        <p><strong>Part Time – Team Member, Coles, Manly Vale & Dee Why, Australia</strong><br>03/2020 – 03/2025</p>
+        <ul>
+          <li>Delivered friendly customer service and maintained store operations</li>
+          <li>Strengthened teamwork, multitasking, and communication in a fast-paced setting</li>
+        </ul>
 
-<p><strong>Yard Associate, Hardware & General Supplies Limited, Brookvale, Australia</strong><br>
-03/2022 – 03/2023</p>
-<ul>
-  <li>Assisted in product handling, customer loading, and yard stock coordination</li>
-  <li>Demonstrated reliability and commitment before transitioning into an IT role within the company</li>
-</ul>
-
+        <p><strong>Yard Associate, Hardware & General Supplies Limited, Brookvale, Australia</strong><br>03/2022 – 03/2023</p>
+        <ul>
+          <li>Assisted in product handling, customer loading, and yard stock coordination</li>
+          <li>Demonstrated reliability and commitment before transitioning into an IT role within the company</li>
+        </ul>
       </div>
 
       <div id="skills" class="bubble">
@@ -100,6 +96,20 @@
       </div>
     </div>
   </div>
+
   <script src="script.js"></script>
+  <script>
+    new Typed("#typed-text", {
+      strings: [
+        "IT Systems Administrator",
+        "Support Specialist",
+        "Network Technician",
+        "Project Delivery"
+      ],
+      typeSpeed: 40,
+      backSpeed: 20,
+      loop: true
+    });
+  </script>
 </body>
 </html>
